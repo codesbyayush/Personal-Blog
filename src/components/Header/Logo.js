@@ -10,7 +10,7 @@ const Logo = () => {
               priority
               />
           </div>
-          <span className="text-xl font-bold">Me</span>
+          <span className="text-xl font-bold">Ayu..</span>
       </Link>
   )
 }

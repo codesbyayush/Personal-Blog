@@ -4,10 +4,11 @@ import { DribbbleIcon, GithubIcon, LinkedinIcon, TwitterIcon } from "../Icons"
 import Image from 'next/image'
 import siteMetadata from "@/src/utils/siteMetaData"
 import ThemeSwitcher from "./ThemeSwitcher"
+import HamNav from "./HamNav"
 
 const Header = () => {
   return (
-    <header className=" flex justify-between items-center md:px-12 sm:px-8 px-5 py-4 w-full">
+    <header className=" flex justify-between items-center md:px-12 sm:px-8 px-5 py-4 w-full relative">
       <Logo />
       <nav className="sm:flex items-center px-6 py-3 bg-white/90 rounded-full backdrop:blur-sm text-dark font-semibold capitalize border border-solid border-dark fixed top-6 left-1/2 -translate-x-1/2 z-50 hidden">
         <Link href={'/'} className="px-2">Home</Link>
@@ -16,7 +17,7 @@ const Header = () => {
         
         <ThemeSwitcher />
       </nav>
-      <div className="flex gap-3 ">
+      <div className="sm:flex gap-3 hidden">
         <a className="h-6 w-6 cursor-pointer" href={siteMetadata.linkedin}>
         <LinkedinIcon className="hover:scale-125
          ease duration-200"/>
@@ -34,6 +35,7 @@ const Header = () => {
          ease duration-200"/>
         </a>
       </div>
+      <HamNav />
       
       </header>
   )
