@@ -5,7 +5,7 @@ const siteMetadata = {
     description: 'A blog created with Next.js, Tailwind.css and contentlayer.',
     language: 'en-us',
     theme: 'system', 
-    siteUrl: 'https://ayush-blog.vercel.app',
+    siteUrl: 'https://blog-ayush.vercel.app',
     siteLogo: '/logo.png',
     socialBanner: '/social-banner.png', // add social banner in the public folder
     email: 'codesbyayush@gmail.com', 
